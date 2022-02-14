@@ -15,3 +15,12 @@ Go to Global Jenkins Configuration at http://localhost:8080/configureTools/
 Then go to your Project. Inside settings/configure -> build. Select Maven which you have created as above.
 
 ![image](https://user-images.githubusercontent.com/93154062/153914407-053c137e-6e9e-425f-871a-a006b6addfe4.png)
+
+**How to provide Compiler to Jenkins**
+
+Go to Global Jenkins Configuration at http://localhost:8080/configureTools/
+- Click "JDK installations" under JDK
+- Uncheck Install Automatically
+- Provide path to the JDK under JAVA_HOME field.
+
+![image](https://user-images.githubusercontent.com/93154062/153915362-3ea5be68-a64a-4802-bd67-8beb0b62812c.png)
