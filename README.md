@@ -1,5 +1,21 @@
 # Jenkins
 
+Install Jenkins & see it running default at localhost:8080
+
+**Create Job for Build on Commit & Dockerize**
+- Create New Job
+- Name the Project
+- Freestyle Project
+- Github Project (URL)
+- SCM (.git URL from Clone & Download Button)
+- Schedule (* * * * *) for Build on Commit
+- Build - invoke top level Maven targets, Goals - install
+- Apply & Save
+
+**How to Add Docker Plugin to Jenkins**
+Jenkins - Manage Jenkins - Manage Plugins - Available (Cloudbees, Docker Plugin & docker-build-step)
+then Jenkins Home - <Project> - Configure - Build (Add Build Step i.e. build/Docker Build & Publish - provide repoName as <DockerID>/<imageName> & registry Credentials as configured below for DockerHub)
+
 **How to Add DockerHub Credentials to Jenkins**
 
 Go to Credentials → Global → Add credentials, and fill out the form with your username and password. Fill in ID and Descriptions. Note that if you set the ID, you will need this specific ID to refer this credential from your scripts. Here we are just using dockerhub_id.
