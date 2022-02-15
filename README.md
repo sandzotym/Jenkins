@@ -1,5 +1,8 @@
 # Jenkins
 
+CI - Build, Test, Code Coverage, Docker Image
+CD - Deploy, Push Docker Images to DockerHub
+
 Install Jenkins & see it running default at localhost:8080
 
 **Create Job for Build on Commit & Dockerize**
